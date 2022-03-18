@@ -1,12 +1,17 @@
 // These are your dependencies//
-const sql = require("mysql")
+const mysql = require("mysql")
 const inquirer = require("inquirer")
 const consoleTable = require("console.table");
-
-
-const startingPage = {
-    Department:"Department",
-    Roles: "Roles",
-    Team: "Team",
-
+//--STARTING OPTIONS--//
+const allRoles = {
+    all: "show every role available",
+    add: "add a new role",
+    delete: "delete a role",
 }
+
+const yourStartingPoint = mysql.createConnection (
+
+    {
+
+    }
+)
