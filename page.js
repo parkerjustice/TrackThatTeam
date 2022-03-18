@@ -26,8 +26,7 @@ const createAccount = mysql.createConnection({
 function mainPage() {
     console.log('test for main')
     inquirer.prompt( {
-        name: "first",
-        type: "list",
+        name: "first",type: "list",
         choices: [initialPage.Role, initialPage.TeamMates, initialPage.Production]
 
     })
