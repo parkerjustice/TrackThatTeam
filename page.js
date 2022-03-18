@@ -9,13 +9,17 @@ const allRoles = {
     delete: "delete a role",
     initialPage: "going back to homepage"
 }
-
 const initialPage = {
 Production: "all the roles",
 TeamMates: "these are the employees",
 Role: "the specific roles"
 
 }
+
+const createAccount = mysql.createConnection({
+    password: "12345",
+    database: "yes"
+  });
 
 //functions 
 
@@ -36,5 +40,19 @@ function Production() {
         name:"second",
         type:"list",
 choices: [ allRoles.available, allRoles.add, allRoles.delete, allRoles.initialPage ]
+    })
+}
+function TeamMates() {
+    inquirer.prompt( {
+        name:"third",
+        type: "list",
+        choices: [allRoles.available, allRoles.add, allRoles.delete, allRoles.initialPage ]
+    })
+}
+function Role () {
+    inquirer.prompt( {
+        name:"fourth",
+        type: "list",
+        choices: [allRoles.available, allRoles.add, allRoles.delete, allRoles.initialPage ]
     })
 }
