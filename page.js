@@ -20,10 +20,10 @@ Role: "the specific roles"
 //functions 
 
 function mainPage() {
-    console.log('test')
-    inquirer.prompt({
+    console.log('test for main')
+    inquirer.prompt( {
         type: "list", message: "pick one",
         choices: [initialPage.Role, initialPage.TeamMates, initialPage.Production]
-        
+
     })
 }
