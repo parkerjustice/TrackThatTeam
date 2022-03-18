@@ -27,6 +27,8 @@ function mainPage() {
         choices: [initialPage.Role, initialPage.TeamMates, initialPage.Production]
 
     })
+    if(answer.first === initialPage.Production){Production}
+    
 }
 
 function Production() {
