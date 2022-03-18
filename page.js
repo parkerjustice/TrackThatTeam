@@ -4,7 +4,7 @@ const inquirer = require("inquirer")
 const consoleTable = require("console.table");
 //--STARTING OPTIONS--//
 const allRoles = {
-    all: "show every role available",
+    available: "show every role available",
     add: "add a new role",
     delete: "delete a role",
     initialPage: "going back to homepage"
@@ -22,8 +22,17 @@ Role: "the specific roles"
 function mainPage() {
     console.log('test for main')
     inquirer.prompt( {
-        type: "list", message: "pick one",
+        name: "first",
+        type: "list",
         choices: [initialPage.Role, initialPage.TeamMates, initialPage.Production]
 
+    })
+}
+
+function Production() {
+    inquirer.prompt({
+        name:"second",
+        type:"list",
+choices: [ allRoles.available, allRoles.add, allRoles.delete, allRoles.initialPage ]
     })
 }
