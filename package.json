@@ -1,0 +1,26 @@
+{
+    "name": "TrackThatTeam",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/parkerjustice/TrackThatTeam"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/parkerjustice/TrackThatTeam"
+    },
+    "homepage": "https://github.com/parkerjustice/TrackThatTeam#readme",
+    "dependencies": {
+      "console.table": "^0.10.0",
+      "express": "^4.17.1",
+      "inquirer": "^7.3.3",
+      "mysql": "^2.18.1"
+    },
+    "devDependencies": {}
+  }
